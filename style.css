@@ -40,6 +40,10 @@ li {
     list-style-type: none;
 }
 
+.orange {
+    color: #EB8317;
+}
+
 .nav__container {
     width: 100%;
     max-width: 1200px;
@@ -82,4 +86,152 @@ li {
     text-decoration: none;
     color: #f4f6ff;
     background-color: #10375c;
+}
+
+/*
+
+LANDING
+
+*/
+
+
+#landing {
+    background-color:#f4f6ff;
+}
+
+header {
+    height: calc (100vh - 80px);
+}
+
+.header__container {
+    padding: 24px;
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.header__description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 56px;
+    color: black;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 32px;
+    text-align: center;
+}
+
+button {
+    cursor: pointer;
+}
+
+button:active {
+    transform: translateY(1px);
+
+}
+
+.btn {
+    background-color: #EB8317;
+    color: white;
+    padding: 12px 24px;
+    font-size: 20px;
+    border-radius: 4px;
+    border: none;
+}
+
+.header__img--wrapper {
+    padding: 20px;
+    z-index: 2;
+}
+
+.container {
+    padding: 56px 0;
+}
+
+.row {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.row__column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.no-cursor {
+    cursor: not-allowed;
+}
+
+/*
+
+FEATURES
+
+*/
+
+.container {
+    display: flex;
+    width: 80vw;
+}
+
+.panel {
+    background-size: auto 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    flex:0.5;
+    margin: 10px;
+    position: relative;
+    transition: flex 0.7s ease-in;
+}
+
+.panel h3 {
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+
+.panel.active {
+    flex:5;
+}
+
+.panel.active h3 {
+    opacity: 1;
+    transform: opacity 0.3s ease-in 0.4s;
+}
+
+
+
+@media(max-width: 480px) {
+    .container {
+        width: 100vw;
+    }
+
+    .panel:nth-of-type(4),
+    .panel:nth-of-type(5),
+    .panel:nth-of-type(6),
+    .panel:nth-of-type(7),
+    .panel:nth-of-type(8)
+    {
+        display: none;
+    }
 }
