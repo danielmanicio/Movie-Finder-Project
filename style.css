@@ -94,7 +94,6 @@ LANDING
 
 */
 
-
 #landing {
     background-color:#f4f6ff;
 }
@@ -182,32 +181,27 @@ FEATURES
 
 */
 
-.container {
+.features__container {
     display: flex;
-    width: 80vw;
+    width: 100vw;
+}
+
+.section__title {
+    margin-top: 24px;
 }
 
 .panel {
     background-size: auto 100%;
     background-position: center;
     background-repeat: no-repeat;
-    height: 80vh;
-    border-radius: 50px;
+    height: 70vh;
+    border-radius: 60px;
     color: #fff;
     cursor: pointer;
     flex:0.5;
     margin: 10px;
     position: relative;
     transition: flex 0.7s ease-in;
-}
-
-.panel h3 {
-    font-size: 24px;
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    margin: 0;
-    opacity: 0;
 }
 
 .panel.active {
@@ -218,7 +212,6 @@ FEATURES
     opacity: 1;
     transform: opacity 0.3s ease-in 0.4s;
 }
-
 
 
 @media(max-width: 480px) {
