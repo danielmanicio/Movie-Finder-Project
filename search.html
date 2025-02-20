@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./assets/title icon.png">
+    <title>THE CUT - Browse Movies</title>
+</head>
+<body class="body__search">
+        <nav>
+            <div class="nav__container">
+                <img class="logo" src="./assets/logo.png" alt="logo">
+                <ul class="nav__links">
+                    <li><a href="./index.html" class="nav__link">Back to Home</a></li>
+                <button class="btn__menu" onclick="openMenu()">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+                <div class="menu__backdrop">
+                    <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                        <i class="fas fa-times"></i>
+                    </button>
+                    <ul class="menu__links">
+                        <li class="menu__list">
+                            <a class="menu__link" onclick="closeMenu()" href="./index.html">Home</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>              
+        </nav>
+        <div class="container">
+            <div class="row">
+                <header class="header__search">
+                    <form id="form">
+                        <input type="text" id="search" class="search__box" placeholder="Search Movies">
+                    </form>  
+                </header>
+            </div>
+        </div>
+            <main id="main-search">
+                <div class="container movies__container">
+                    <div class="row movies__row">
+                        <div class="movie">
+                            <img src="./assets/logo.png" alt="">
+                            <div class="movie-info">
+                                <h3 class="movie__title">Movie Title</h3>
+                                <span class="movie__rating">9.5</span>
+                            </div>
+                            <div class="overview">
+                                <h3 class="overview__title">Overview</h3>
+                                <p class="overview__description">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores esse provident eligendi voluptatum libero dolorem reprehenderit consectetur aut mollitia amet.
+
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="movie">
+                            <img src="./assets/logo.png" alt="">
+                            <div class="movie-info">
+                                <h3 class="movie__title">Movie Title</h3>
+                                <span class="movie__rating">9.5</span>
+                            </div>
+                            <div class="overview">
+                                <h3 class="overview__title">Overview</h3>
+                                <p class="overview__description">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores esse provident eligendi voluptatum libero dolorem reprehenderit consectetur aut mollitia amet.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="movie">
+                            <img src="./assets/logo.png" alt="">
+                            <div class="movie-info">
+                                <h3 class="movie__title">Movie Title</h3>
+                                <span class="movie__rating">9.5</span>
+                            </div>
+                            <div class="overview">
+                                <h3 class="overview__title">Overview</h3>
+                                <p class="overview__description">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores esse provident eligendi voluptatum libero dolorem reprehenderit consectetur aut mollitia amet.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+    <footer>
+        <div class="container">
+            <div class="row row__column">
+                <a href="">
+                    <figure class="footer__logo">
+                        <img class="footer__logo--img" src="./assets/logo.png" alt="">
+                    </figure>
+                </a>
+                <div class="footer__list">
+                    <a href="#landing" class="footer__link">Home</a>
+                    <a href="#about" class="footer__link">About</a>
+                    <a href="#features" class="footer__link">Features</a>
+                    <a href= "#landing" class="footer__link">Search</a>
+            </div>
+    <div class="footer__copyright">Copyright © 2025 THE CUT </div>
+    </div>    
+    </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

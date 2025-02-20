@@ -320,22 +320,6 @@ FEATURES
 }
 
 
-@media(max-width: 480px) {
-    .container {
-        width: 100vw;
-    }
-
-    .panel:nth-of-type(4),
-    .panel:nth-of-type(5),
-    .panel:nth-of-type(6),
-    .panel:nth-of-type(7),
-    .panel:nth-of-type(8)
-    {
-        display: none;
-    }
-}
-
-
 /*
 
 ABOUT
@@ -452,4 +436,120 @@ footer {
         font-size: 20px;
     }
 
+    .container {
+        width: 100vw;
+    }
+
+    .panel:nth-of-type(4),
+    .panel:nth-of-type(5),
+    .panel:nth-of-type(6),
+    .panel:nth-of-type(7),
+    .panel:nth-of-type(8)
+    {
+        display: none;
+    }
+
+}
+
+
+/* SEARCH  PAGE */
+
+.body__search {
+    background-color: #f4f6ff;
+}
+
+.header__search {
+    padding: 24px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.search__box {
+    background-color: transparent;
+    border: 3px solid #EB8317;
+    border-radius: 20px;
+    font-family: inherit;
+    font-size: 16px;
+    padding: 8px 16px;
+    color: #10375c;
+}
+
+.search__box::placeholder {
+    color: #10375C;
+}
+
+.search__box:focus {
+    outline: none;
+    background-color: #f3c623;
+}
+
+
+/* Main*/
+
+.movies__row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.movie {
+    width: 300px;
+    margin: 8px;
+    background-color: #EB8317;
+    box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.movie img {
+    width: 100%;
+}
+
+.movie-info {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 16px 16px;
+    letter-spacing: .5px;
+}
+
+.movie__title {
+    margin-top: 0;
+}
+
+.movie__rating {
+    background-color: #f4f6ff;
+    padding: 2px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.movie__rating .yellow {
+    color: #f3c623;
+}
+
+.movie__rating .orange {
+    color: #EB8317;
+}
+
+.movie__rating .royalblue {
+    color: #10375c;
+}
+
+.overview {
+    background-color: #f3c623;
+    padding: 4px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    max-height: 100%;
+    transform: translateY(101%);
+    transition: transform 0.3s ease-in;
+}
+
+.movie:hover .overview {
+    transform: translateY(0);
 }
