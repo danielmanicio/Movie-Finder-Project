@@ -306,7 +306,6 @@ FEATURES
     background-position: center;
     background-repeat: no-repeat;
     height: 70vh;
-    border-radius: 60px;
     color: #fff;
     cursor: pointer;
     flex:0.5;
@@ -435,20 +434,6 @@ footer {
     .header__subtitle {
         font-size: 20px;
     }
-
-    .container {
-        width: 100vw;
-    }
-
-    .panel:nth-of-type(4),
-    .panel:nth-of-type(5),
-    .panel:nth-of-type(6),
-    .panel:nth-of-type(7),
-    .panel:nth-of-type(8)
-    {
-        display: none;
-    }
-
 }
 
 
@@ -526,20 +511,21 @@ footer {
     font-weight: bold;
 }
 
-.movie__rating .yellow {
-    color: #f3c623;
+.movie__rating .gold {
+    color: #FFD700;
 }
 
-.movie__rating .orange {
-    color: #EB8317;
+.movie__rating .silver {
+    color: #c0c0c0;
 }
 
-.movie__rating .royalblue {
-    color: #10375c;
+.movie__rating .bronze {
+    color: #cd7f32;
 }
 
 .overview {
     background-color: #f3c623;
+    border-radius: 4px;
     padding: 4px;
     position: absolute;
     left: 0;
