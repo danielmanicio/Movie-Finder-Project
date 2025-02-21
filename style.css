@@ -511,15 +511,15 @@ footer {
     font-weight: bold;
 }
 
-.movie__rating .gold {
+.gold {
     color: #FFD700;
 }
 
-.movie__rating .silver {
+.silver {
     color: #c0c0c0;
 }
 
-.movie__rating .bronze {
+.bronze {
     color: #cd7f32;
 }
 
