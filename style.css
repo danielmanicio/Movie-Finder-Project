@@ -485,6 +485,7 @@ footer {
     position: relative;
     overflow: hidden;
     border-radius: 4px;
+    animation: fadeIn 2s forwards;
 }
 
 .movie img {
